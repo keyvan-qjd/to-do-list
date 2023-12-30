@@ -44,6 +44,8 @@
     margin-bottom: 25px;
 }
 
+
+
 input{
     flex: 1;
     border: none;
@@ -111,3 +113,34 @@ ul li span{
 ul li span:hover{
     background: #edeef0;
 }
+
+.reset-btn{
+    width: 100%;
+}
+#reset{
+    position: absolute;
+    top: auto;
+    left: 400px;
+}
+
+
+#row2{
+    position: relative;
+}
+#reset-btn{
+    position: absolute;
+}
+
+#row2{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#row3{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
