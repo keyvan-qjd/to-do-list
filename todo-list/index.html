@@ -9,10 +9,21 @@
 <body>
     <div class="container">
         <div class="todo-app">
-            <h2>
-                To-Do List
-                <image src="images/icon.png"></image>
-            </h2>
+            <div id="row2">
+                <div id="row3">
+                    <h2>
+                        To-Do List
+                    </h2>
+                    <!-- <image src="images/icon.png"></image> -->
+                    <img src="images/icon.png" alt="" id="task-image">
+                </div>
+                
+                <button id="btn-reset">
+                    reset
+                </button>
+
+            </div>
+            
             <div class="row">
                 <input type="text" id="input-box" placeholder="Add your task">
                 <button onclick="addTask()">Add</button>
