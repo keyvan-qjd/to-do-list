@@ -2,6 +2,8 @@ const inputBox = document.getElementById('input-box');
 
 const listContainer = document.getElementById('list-container');
 
+const inputreset = document.getElementById('btn-reset');
+
 function addTask(){
     if(inputBox.value === ''){
         alert('you must write task.')
@@ -36,3 +38,23 @@ function showTask(){
 }
 
 showTask();
+
+inputreset.addEventListener(
+    "click",
+    function(){
+        if (listContainer) {
+            // Iterate through each list item (li) within the list
+            list.querySelectorAll('li').forEach((item, index) => {
+              // Set the new item number as a string with leading zero if needed
+              item.textContent = `0${index + 1}. `;
+        
+              // If it's an ordered list (ol), also reset the counter attribute
+              if (list.tagName === 'OL') {
+                item.setAttribute('value', index + 1);
+              }
+            });
+          } else {
+            console.error(`List with ID "${listId}" not found.`);
+          }
+    }
+);
